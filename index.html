@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/3dfb6acb0b823e78eff8ab8c14ab706f.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papa's Burger</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="stroke">Build your Burger</h1>
+        <p id="description">Thank you for choosing Papa's Burger</p>
+      </header>
+      <div class="form-div">
+        <form action="html/submitted.html" id="survey-form">
+          <div class="formgroup">
+            <label class="labelclass stroke" id="name-label" for="name"
+              >Name <span class="red">*</span></label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+              min="3"
+              max="24"
+            />
+          </div>
+          <div class="formgroup">
+            <label class="labelclass stroke" id="email-label" for="email"
+              >Email <span class="red">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label class="labelclass" id="number-label" for="number"
+              >How many Papa's Burgers would you like?
+              <span class="red">*</span></label
+            >
+            <input
+              type="number"
+              name="number-of-burgs"
+              id="number"
+              placeholder="1"
+              value="1"
+              required
+              min="1"
+              max="10"
+            />
+          </div>
+          <div class="formgroup">
+            <label class="labelclass stroke" for="dropdown"
+              >What type of bun would you like?
+              <span class="red">*</span></label
+            >
+            <select name="buntype" id="dropdown" required>
+              <option vlaue="" disabled selected>Choose bun type</option>
+              <option value="classic">Classic</option>
+              <option value="whole">Whole grain</option>
+              <option value="sesame">Sesame seed</option>
+              <option value="potato">Potato</option>
+            </select>
+          </div>
+          <div class="formgroup">
+            <p class="labelclass stroke">
+              What kind of patty would you like? <span class="red">*</span>
+            </p>
+            <span class="display-block">
+              <input type="radio" name="meat" id="beef" value="beef" required />
+              <label for="beef" class="select">Beef</label>
+            </span>
+            <span class="display-block">
+              <input
+                type="radio"
+                name="meat"
+                id="chicken"
+                value="chicken"
+                required
+              />
+              <label for="chicken" class="select">Chicken</label>
+            </span>
+            <span class="display-block">
+              <input
+                type="radio"
+                name="meat"
+                id="turkey"
+                value="turkey"
+                required
+              />
+              <label for="turkey" class="select">Turkey</label>
+            </span>
+            <span class="display-block">
+              <input type="radio" name="meat" id="tofu" value="tofu" required />
+              <label for="tofu" class="select">Tofu</label>
+            </span>
+            <span class="display-block">
+              <input type="radio" name="meat" id="none" value="none" required />
+              <label for="none" class="select">None</label>
+            </span>
+          </div>
+          <div class="formgroup">
+            <p class="labelclass stroke">What else would you like inside?</p>
+            <span class="display-block">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="filling"
+                id="tomato"
+                class="checkbox"
+                value="tomato"
+              />
+              <label for="tomato" class="select">Tomato</label>
+            </span>
+            <span class="display-block">
+              <input
+                type="checkbox"
+                name="filling"
+                id="lettuce"
+                class="checkbox"
+                value="lettuce"
+              />
+              <label for="lettuce" class="select">Lettuce</label>
+            </span>
+            <span class="display-block">
+              <input
+                type="checkbox"
+                name="filling"
+                id="pickles"
+                class="checkbox"
+                value="pickles"
+              />
+              <label for="pickles" class="select">Pickles</label>
+            </span>
+            <span class="display-block">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="filling"
+                id="onion"
+                class="checkbox"
+                value="onion"
+              />
+              <label for="onion" class="select">Onion</label>
+            </span>
+            <span class="display-block">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="filling"
+                id="cheese"
+                class="checkbox"
+                value="cheese"
+              />
+              <label for="cheese" class="select">Cheese</label>
+            </span>
+          </div>
+          <div class="formgroup">
+            <p class="labelclass stroke">Anything else?</p>
+            <textarea
+              name="other"
+              id="textarea"
+              placeholder="Enter what else you want on your Burger."
+            ></textarea>
+          </div>
+          <div class="formgroup" id="button">
+            <button type="submit" id="submit">Order</button>
+          </div>
+        </form>
+        <hr />
+        <p id="required"><span class="red">*</span> - required</p>
+      </div>
+    </div>
+    <footer>
+      <p>no-copyright &copy; 2021, Júda Vodrážka</p>
+    </footer>
+  </body>
+</html>
